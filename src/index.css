@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply py-2 px-4 rounded;
+}
+
+.btn-blue{
+    @apply bg-blue-500 text-white;
+}
+
+.btn-blue:hover{
+    @apply bg-blue-700;
+}
+
+.cover-bg{
+    @apply h-screen w-screen;
+}
+
+.login-container{
+    @apply justify-center items-center flex h-full;
+}
+
+.fondo{
+    background-image: url('./assets/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-bar{
+    @apply justify-end items-end flex-row flex mx-4;
+}
+
+.space-top{
+    @apply mx-4 my-1;
+}
+
+.space-top:hover{
+    @apply border-b-2 border-green-500;
+}
+
+.holder{
+    @apply h-2/3 w-2/3;
+}
+
+.title-container{
+    @apply justify-center items-center flex;
+}
+
+.title{
+    @apply text-2xl text-green-700;
+}
+
+.glass-effect{
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.login-button{
+    @apply bg-green-400 text-white rounded my-6 py-3;
+}
+
+.login-button:hover{
+    @apply bg-green-600;
+}
